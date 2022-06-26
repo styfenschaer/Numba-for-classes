@@ -1,5 +1,5 @@
-# numba-for-classes
-Just-in-time compile class methods with Numba
+# Numba-for-classes
+Just-in-time compile class methods with Numba 🚀
 
 With *Numbas* you can now accelerate class methods with Numba without writing overly verbose code. 
 If your class is suitable to be accelerated with *Numbas*, then there is good news: 
@@ -47,8 +47,8 @@ scaler.fit(X)
 271 ms ± 3.63 ms per loop (mean ± std. dev. of 10 runs, 3 loops each) 
 ```
 
-When the time is right, I will give more examples of what *numbas* can and cannot do. 
-You may be surprised how much you can actually do with such a simple solution as *numbas*, 
+When the time is right, I will give more examples of what *Numbas* can and cannot do. 
+You may be surprised how much you can actually do with such a simple solution as *Numbas*, 
 but also how limited it is, although many limitations could be fixed with a little love and time.
 
 One limitation I won't deprive you of is the need to reset your compiled function before changing the 
@@ -65,7 +65,7 @@ scaler.fit(X_new)
 ```
 
 Because it is not uncommon that the change of class attributes is associated with another method call, 
-*numbas* provides a more convenient way to do this.
+*Numbas* provides a more convenient way to do this.
 In our case, we want to reset our decorated function every time we refit the scaler. We can achieve this 
 by informing the ``fit`` method about the class methods we want to reset:
 
